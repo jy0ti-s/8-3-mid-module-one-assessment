@@ -26,8 +26,13 @@ const animals = [
  * getTotalCount(animals); //> 28
  * getTotalCount([]); //> 0 // returns 0 if the input array is empty
  */
-function getTotalCount(animals) {}
-
+function getTotalCount(animals) {
+  let count = 0;
+  for (let animal of animals){
+    count += animal.count;
+  }
+  return count;
+}
 /**
  * FUNCTION DESCRIPTION
  * ------------------
